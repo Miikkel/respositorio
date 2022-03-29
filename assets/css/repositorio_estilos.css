@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/* css del titulo e imput de busqueda*/
+
+.titulo_container {
+    display: block;
+    text-align: center;
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+
+.header_container {
+    display: block;
+}
+
+.search_container {
+    text-align: center;
+    margin: 30px;
+}
+
+.input_search {
+    padding: 2px;
+    min-width: 300px;
+}
+
+
+/* FIN css del titulo e imput de busqueda*/
+
+
+/* css Listado de Articulos*/
+
+
+
+.main_listado {
+    padding: 20px;
+}
+
+
+
+.container_articulos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+@media(max-width:750px) {
+    .container_articulos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width:400px) {
+    .container_articulos {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.articulo {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center
+}
+
+.articulo_icon {
+    color: blue;
+    cursor: pointer;
+    display: block;
+    margin: 10px 0;
+}
+
+/* css filtro de Articulos*/
+
+        .input_filtro {
+            padding: 2px;
+            min-width: 200px;
+        }
+
+        .container_filtro {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        @media(max-width:750px) {
+            .container_filtro {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media(max-width:400px) {
+            .container_filtro {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+        /*FIN css filtro de Articulos*/
